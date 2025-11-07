@@ -24,7 +24,7 @@ __global__ void matrixMul(const float *A, const float *B, float *C, int numARows
             sum += A[row * numACols + i] * B[i * numBCols + col];
         }
         C[row * numBCols + col] = sum;
-        printf("[+] C[%d] = %f\n", (row * numBCols + col), sum);
+        // printf("[+] C[%d] = %f\n", (row * numBCols + col), sum);
     }
 }
 
