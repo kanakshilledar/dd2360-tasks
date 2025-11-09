@@ -1,0 +1,137 @@
+reporting for 512 256 256 512
+Generating SQLite file report_512 256 256 512.sqlite from report_512 256 256 512.nsys-rep
+Processing [report_512 256 256 512.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                 Name                               
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  ------------------------------------------------------------------
+    100.0           280094          1  280094.0  280094.0    280094    280094          0.0  matrixMul(const double *, const double *, double *, int, int, int)
+
+Processing [report_512 256 256 512.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ----------------------------
+     55.8            60800      1   60800.0   60800.0     60800     60800          0.0  [CUDA memcpy Device-to-Host]
+     44.2            48160      2   24080.0   24080.0     23936     24224        203.6  [CUDA memcpy Host-to-Device]
+
+reporting for 1024 512 512 1024
+Generating SQLite file report_1024 512 512 1024.sqlite from report_1024 512 512 1024.nsys-rep
+Processing [report_1024 512 512 1024.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)   Med (ns)   Min (ns)  Max (ns)  StdDev (ns)                                 Name                               
+ --------  ---------------  ---------  ---------  ---------  --------  --------  -----------  ------------------------------------------------------------------
+    100.0          2196306          1  2196306.0  2196306.0   2196306   2196306          0.0  matrixMul(const double *, const double *, double *, int, int, int)
+
+Processing [report_1024 512 512 1024.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)   Med (ns)   Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  ---------  ---------  --------  --------  -----------  ----------------------------
+     77.3          3154475      1  3154475.0  3154475.0   3154475   3154475          0.0  [CUDA memcpy Device-to-Host]
+     22.7           924314      2   462157.0   462157.0    456477    467837       8032.7  [CUDA memcpy Host-to-Device]
+
+reporting for 2048 2048 2048 2048
+Generating SQLite file report_2048 2048 2048 2048.sqlite from report_2048 2048 2048 2048.nsys-rep
+Processing [report_2048 2048 2048 2048.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)    Med (ns)   Min (ns)  Max (ns)  StdDev (ns)                                 Name                               
+ --------  ---------------  ---------  ----------  ----------  --------  --------  -----------  ------------------------------------------------------------------
+    100.0         35803471          1  35803471.0  35803471.0  35803471  35803471          0.0  matrixMul(const double *, const double *, double *, int, int, int)
+
+Processing [report_2048 2048 2048 2048.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)    Med (ns)   Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  ----------  ----------  --------  --------  -----------  ----------------------------
+     69.8         15950932      1  15950932.0  15950932.0  15950932  15950932          0.0  [CUDA memcpy Device-to-Host]
+     30.2          6913138      2   3456569.0   3456569.0   3455337   3457801       1742.3  [CUDA memcpy Host-to-Device]
+
+reporting for 4096 2048 2048 4096
+Generating SQLite file report_4096 2048 2048 4096.sqlite from report_4096 2048 2048 4096.nsys-rep
+Processing [report_4096 2048 2048 4096.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)                                 Name                               
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  ------------------------------------------------------------------
+    100.0        143158946          1  143158946.0  143158946.0  143158946  143158946          0.0  matrixMul(const double *, const double *, double *, int, int, int)
+
+Processing [report_4096 2048 2048 4096.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)    Med (ns)   Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  ----------  ----------  --------  --------  -----------  ----------------------------
+     78.7         69269215      1  69269215.0  69269215.0  69269215  69269215          0.0  [CUDA memcpy Device-to-Host]
+     21.3         18695303      2   9347651.5   9347651.5   9342243   9353060       7648.8  [CUDA memcpy Host-to-Device]
+
+reporting for 8192 2048 2048 8192
+Generating SQLite file report_8192 2048 2048 8192.sqlite from report_8192 2048 2048 8192.nsys-rep
+Processing [report_8192 2048 2048 8192.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)                                 Name                               
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  ------------------------------------------------------------------
+    100.0        571304163          1  571304163.0  571304163.0  571304163  571304163          0.0  matrixMul(const double *, const double *, double *, int, int, int)
+
+Processing [report_8192 2048 2048 8192.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  -----  -----------  -----------  ---------  ---------  -----------  ----------------------------
+     91.3        293041330      1  293041330.0  293041330.0  293041330  293041330          0.0  [CUDA memcpy Device-to-Host]
+      8.7         27797134      2   13898567.0   13898567.0   13883687   13913447      21043.5  [CUDA memcpy Host-to-Device]
+
+reporting for 8192 8192 8192 8192
+Generating SQLite file report_8192 8192 8192 8192.sqlite from report_8192 8192 8192 8192.nsys-rep
+Processing [report_8192 8192 8192 8192.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)                                 Name                               
+ --------  ---------------  ---------  ------------  ------------  ----------  ----------  -----------  ------------------------------------------------------------------
+    100.0       2285691892          1  2285691892.0  2285691892.0  2285691892  2285691892          0.0  matrixMul(const double *, const double *, double *, int, int, int)
+
+Processing [report_8192 8192 8192 8192.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  -----  -----------  -----------  ---------  ---------  -----------  ----------------------------
+     71.1        276746107      1  276746107.0  276746107.0  276746107  276746107          0.0  [CUDA memcpy Device-to-Host]
+     28.9        112250485      2   56125242.5   56125242.5   55796541   56453944     464854.1  [CUDA memcpy Host-to-Device]
+
+reporting for 16384 4096 4096 16384
+Generating SQLite file report_16384 4096 4096 16384.sqlite from report_16384 4096 4096 16384.nsys-rep
+Processing [report_16384 4096 4096 16384.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)                                 Name                               
+ --------  ---------------  ---------  ------------  ------------  ----------  ----------  -----------  ------------------------------------------------------------------
+    100.0       4564803130          1  4564803130.0  4564803130.0  4564803130  4564803130          0.0  matrixMul(const double *, const double *, double *, int, int, int)
+
+Processing [report_16384 4096 4096 16384.sqlite] with [/usr/local/cuda-12.4/NsightSystems-cli-2024.2.1/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  -----  ------------  ------------  ----------  ----------  -----------  ----------------------------
+     90.1       1141019025      1  1141019025.0  1141019025.0  1141019025  1141019025          0.0  [CUDA memcpy Device-to-Host]
+      9.9        125481089      2    62740544.5    62740544.5    53716010    71765079   12762619.1  [CUDA memcpy Host-to-Device]
+
+
+real    261m43.456s
+user    0m2.163s
+sys     0m1.859s
