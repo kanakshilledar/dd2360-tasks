@@ -20,7 +20,7 @@ for SIZE in "${MATRIX_SIZES[@]}"; do
 
   REPORT_FILE="report_${SIZE}"
 
-  nsys profile -o "$REPORT_FILE" --force-overwrite true ./vecMul $SIZE
+  nsys profile -o "$REPORT_FILE" --force-overwrite true ./vecMulDouble $SIZE
 done
 
 echo "[*] Profiling complete."
