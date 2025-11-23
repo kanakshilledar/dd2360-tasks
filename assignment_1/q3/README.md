@@ -1,10 +1,12 @@
-# Q2: Vector Addition
+# Q3: Vector Multiplication
 
 To run the code following the following instructions
 
 ```sh
-nvcc vecAdd.cu -o vecAdd
-./vecAdd <size of array>
+nvcc vecMul.cu -o vecMul
+nvcc vecMulDouble.cu -o vecMulDouble
+./vecMul <size of array>
+./vecMulDouble <size of array>
 ```
 
 ## Instructions to profile

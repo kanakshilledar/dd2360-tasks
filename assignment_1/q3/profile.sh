@@ -11,12 +11,25 @@ MATRIX_SIZES=(
 )
 
 for SIZE in "${MATRIX_SIZES[@]}"; do
-  echo "[+] Profiling with $SIZE"
-  # set -- $SIZE
-  # A_ROW=$1
-  # A_COL=$2
-  # B_ROW=$3
-  # B_COL=$4
+  echo "[+] Profiling with $SIZE for FLOAT"
+
+  REPORT_FILE="report_${SIZE}"
+
+  nsys profile -o "$REPORT_FILE" --force-overwrite true ./vecMul $SIZE
+done
+
+echo "[*] Profiling complete."
+
+for SIZE in "${MATRIX_SIZES[@]}"; do
+  echo "reporting for $SIZE"
+
+  REPORT_FILE="report_${SIZE}.nsys-rep"
+  
+  nsys stats "$REPORT_FILE" --report cuda_gpu_kern_sum --report cuda_gpu_mem_time_sum
+done
+
+for SIZE in "${MATRIX_SIZES[@]}"; do
+  echo "[+] Profiling with $SIZE for DOUBLE"
 
   REPORT_FILE="report_${SIZE}"
 
